@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+header nav{
+    margin-top: 25px;
+}
+header nav ul{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 100px;
+}
+header nav ul img{
+    margin-left: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li a:hover{
+        font-weight: 800;
+        text-decoration: underline;    
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-section div img{
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    /* margin-top: 50px; */
+}
+.new-image{
+    margin-right: 100px;
+}
+.hero-section div h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-section div button{
+    padding: 10px;
+    margin-top: 60px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
