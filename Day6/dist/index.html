@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="./icons8-home-48.png">
+    <!-- External Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert Libary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+    <title>From Validation</title>
+</head>
+<body class="bg-slate-800">
+    <form class="frompage" id="frompage" onsubmit="return validateFrom()" action="./home.html" >
+     <fieldset class="grid justify-center">
+       
+        <!-- Heading -->
+        <h1 class="text-red-600 text-4xl font-serif">Registration From</h1>
+
+        <!-- first name -->
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="fname">First Name :</label> <br>
+        <input type="text" class="text-xl font-serif"  name="firstname" id="fname" placeholder="firstname" >
+        <span class="formAlert"></span><br>
+        </div>
+
+        <!-- last name -->
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="lname">Last Name :</label><br>
+        <input type="text" class="text-xl font-serif" name="lastname" id="lname" placeholder="lastname">
+        <span class="formAlert"></span><br>
+        </div>
+
+        <!-- email id -->
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="lname">Email id:</label><br>
+        <input type="email" class="text-xl font-serif" name="useremail" id="uemail" placeholder="xyz@gmail.com">
+        <span class="formAlert"></span><br>
+
+        </div>
+        <!-- Dob -->
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="lname">Date of Birth :</label><br>
+        <input type="date" class="text-xl font-serif" name="userdateofbirth" id="udob"><br>
+        </div>
+
+        <!-- username -->
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="lname">Username :</label><br>
+        <input type="text" class="text-xl font-serif" name="username" id="uname" placeholder="username">
+        <span class="formAlert"></span><br>
+
+        </div>
+        
+        <!-- password -->
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="password">Password : </label><br>
+        <input type="password" class="text-xl font-serif" name="userpassword" id="upass" placeholder="password">
+        <span class="formAlert"></span><br>
+
+        </div>
+
+        <!-- confirm password -->
+        
+        <div class="from-contain">
+        <label class="text-white text-xl font-serif" for="password">Confirm Password : </label><br>
+        <input type="password" class="text-xl font-serif" name="userpassword" id="cupass" placeholder="confrimpassword">
+        <span class="formAlert"></span><br>
+        </div>
+        <!-- submit -->
+        <div class="from-contain">
+        <button type="submit" class="text-white cursor-pointer mt-6 hover:bg-sky-700 bg-gray-400 rounded-lg p-2 text-2xl font-serif ">Submit</button> <br>
+        </div>
+     </fieldset>
+    </form>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
