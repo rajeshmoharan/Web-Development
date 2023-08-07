@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bg-slate-900">
+    <div class="text-center mt-28">
+        <!-- number -->
+        <p id="count" class="text-white text-5xl">0</p>
+        <!-- add -->
+        <button onclick="add()" id="addition" class="text-white border border-white px-3 py-3 rounded-none" >ADD</button>
+        <!-- reset -->
+        <button onclick="reset()" id="reset" class="text-white border border-white px-3 py-3 rounded-none" >RESET</button>
+        <!-- sub -->
+        <button onclick="sub()" id="subtraction" class="text-white border border-white px-3 py-3 rounded-none" >SUB</button>
+    </div>
+
+    <script>
+
+        // addition number
+        function add(){
+           document.getElementById('count').innerHTML++;
+        }
+
+        // subtraction number
+        function sub(){
+            document.getElementById('count').innerHTML--;
+        }
+
+        // reset number
+        function reset(){
+               document.getElementById('count').innerHTML = 0;
+        }
+        
+    </script>
+</body>
+</html>
