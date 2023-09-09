@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userData</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Header -->
+        <h1>Sales Data</h1>
+        <h2>Seller : Jack Smith</h2>
+        <h2>Total Sale : <span id="qty">12</span></h2>
+        <button onclick="addValue()">Add 1 to Sale</button>
+        <button onclick="addTow()">Add 2 to Sale</button>
+    </header>
+
+
+    <script>
+        // JavaScript
+            function addValue(){
+                let ele = document.getElementById('qty');
+                let eleValue = ele.innerHTML;
+                eleValue++;
+                ele.textContent = eleValue;
+            }
+
+            function addTow(){
+                let el = document.getElementById("qty");
+                let eleVal = Number(el.innerHTML);
+                el.textContent = eleVal + 2;
+            }
+
+    </script>
+</body>
+</html>
